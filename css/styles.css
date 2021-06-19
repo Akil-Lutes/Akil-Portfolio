@@ -1,0 +1,99 @@
+html, body {
+    position: relative;
+    margin: 0;
+    height: 2000px;
+  }
+
+/* Header */
+header {
+  height: 100vh;
+}
+
+  .section1 {
+    background-color: rgb(255, 226, 199);
+    /* height: 75vh; */
+  }
+
+/* Animations */
+.spaceIn {
+  animation-name: spaceIn;
+  -webkit-animation-name: spaceIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.spaceOut {
+  animation-name: spaceOut;
+  -webkit-animation-name: spaceOut;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spaceIn {
+   0% {
+    transform: scale3d(1, 1, 1);
+   }
+
+   100% {
+    transform: scale3d(0.94, 0.94, 0.94);
+   }
+}
+
+@keyframes spaceOut {
+   0% {
+     transform: scale3d(0.94, 0.94, 0.94);
+   }
+
+   100% {
+     transform: scale3d(1, 1, 1);
+   }
+}
+
+#image {
+    width: 100%;
+    height: 200px;
+    min-height: 600px;
+    width: 100%; /* Full width */
+    /* transition: 0.2s; Add a transition effect (when scrolling - and font size is decreased) */
+    /* transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(
+0deg
+) rotateY(
+0deg
+) rotateZ(
+0deg
+) skew(
+0deg
+, 
+0deg
+); */
+    /* transform-style: preserve-3d; */
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5000&q=800');
+  }
+
+  /* .danger {
+    margin-top: 0px;
+    height: 250px;
+  }
+
+  .warning {
+    margin-top: 0px;
+    height: 250px;
+  } */
+
+  ul, li {
+    position: relative;
+    margin-top: 0px;
+    bottom: 50px;
+  }
