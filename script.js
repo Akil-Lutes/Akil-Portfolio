@@ -4,23 +4,38 @@ const section1 = document.querySelector('.section1')
 
 
 window.addEventListener('scroll', () => {
-  const y = 1 +  (window.scrollY || window.pageYOffset) / 30
+  const y = 1 +  (window.scrollY || window.pageYOffset) / 35
   const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
   section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 })
 
 // For text change, variables are already set, use them for text color change
+// const [yellow, purple, orange] = [0, 0, 0]
+// const section2 = document.querySelector('.section2')
 
-// window.addEventListener('scroll', () => {
 
-// })
+function myColor() { 
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById('colorWave').className = "intro2"
+    } 
+    else {
+      document.getElementById('colorWave').className = "intro1"
+    }
+};
 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
+// I can try adding the other images in the if/else statements when ready
+function myResize() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("image").className = "spaceIn";
   } else {
     document.getElementById("image").className = "spaceOut";
   }
 }
+
+window.onscroll = function() {
+  myColor();
+  myResize();
+};
+// Another way to invoke my scroll functions
+// window.addEventListener("scroll", navFunction);
+// window.addEventListener("scroll", scrollFunction);
