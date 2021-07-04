@@ -27,6 +27,7 @@ function myColor() {
 function myResize() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("image").className = "spaceIn";
+    document.getElementById("image2").className = "spaceIn";
   } else {
     document.getElementById("image").className = "spaceOut";
   }
