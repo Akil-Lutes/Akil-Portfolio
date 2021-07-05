@@ -40,3 +40,8 @@ window.onscroll = function() {
 // Another way to invoke my scroll functions
 // window.addEventListener("scroll", navFunction);
 // window.addEventListener("scroll", scrollFunction);
+
+// Onload Page transitions
+// window.onload = function() {
+//   document.body.className += " loaded";
+// }
