@@ -1,0 +1,23 @@
+/* LOADER 2 */
+.loader {
+    height: 100vh;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 80px;
+    color: palevioletred;
+    background-image: url('https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
+}
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.25em;
+  }
+}

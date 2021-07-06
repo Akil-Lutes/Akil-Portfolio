@@ -1,4 +1,26 @@
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+// JavaScript properties for the loader
+const loader = document.querySelector('.loader');
+
+const main = document.querySelector('.main');
+
+const element = document.getElementById("myDIV");
+
+function init() {
+  setTimeout(() =>{
+    loader.style.opacity = 0;
+    loader.style.display = "none";
+    // element.classList.remove("loader");
+
+    main.style.display = "block"
+    main.style.opacity = 1;
+  }, 3000);
+}
+
+init();
+
+
+
+// When the user scrolls down 50px from the top of the document, resize the header's font color
 const [red, green, blue] = [255, 226, 199]
 const section1 = document.querySelector('.section1')
 
@@ -10,8 +32,8 @@ window.addEventListener('scroll', () => {
 })
 
 // For text change, variables are already set, use them for text color change
-// const [yellow, purple, orange] = [0, 0, 0]
-// const section2 = document.querySelector('.section2')
+const [yellow, purple, orange] = [0, 0, 0]
+const section2 = document.querySelector('.section2')
 
 
 function myColor() { 
@@ -40,8 +62,3 @@ window.onscroll = function() {
 // Another way to invoke my scroll functions
 // window.addEventListener("scroll", navFunction);
 // window.addEventListener("scroll", scrollFunction);
-
-// Onload Page transitions
-// window.onload = function() {
-//   document.body.className += " loaded";
-// }
