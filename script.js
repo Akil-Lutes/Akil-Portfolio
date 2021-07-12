@@ -13,7 +13,7 @@ function init() {
 
     main.style.display = "block"
     main.style.opacity = 1;
-  }, 3000);
+  }, 2000);
 }
 
 init();
