@@ -36,18 +36,6 @@ section {
   transition: opacity 1s ease-in;
 }
 
-/* body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-} */
-
-
-
-
-
-
-
 /* Center the loader */
 
 /* Header */
@@ -68,28 +56,12 @@ nav {
   height: 15vh;
 }
 
-
-
-@media screen and (max-width: 599px) and (min-width: 300px) {
-  .navbar {
-    display: none;
-  }
-}
-
 .unlist {
   position: relative;
   margin-top: 75px;
   margin-left: 50px;
   bottom: 50px;
   height: 25px;
-}
-
-@media only screen and (min-width: 650px) {
-.unlisted {
-  display: flex;
-  justify-content: space-around;
-
-  }
 }
 
 .navItems {
@@ -107,18 +79,6 @@ nav {
   font-size: 8rem;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  .title {
-    font-size: 5.3rem;
-  }
-}
-
-@media screen and (max-width: 599px) and (min-width: 300px) {
-  .title {
-    font-size: 3.5rem;
-  }
-}
-
 .colorSection {
   color: white;
 }
@@ -132,14 +92,6 @@ nav {
     min-width: 100%;
     height: 50%;
     color: black;
-  }
-
-  @media screen and (max-width: 900px) and (min-width: 600px) {
-    .intro1 {
-      margin: 0;
-      font-size: 1rem;
-      word-wrap: break-word;
-    }
   }
 
 .intro2 {
@@ -157,28 +109,6 @@ nav {
   width: 70%;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  .intro-words {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 599px) and (min-width: 300px) {
-  .intro-words {
-    text-align: center;
-    font-size: 1.5rem;
-    height: 50%;
-    position: absolute;
-  }
-}
-
-
-@media screen and (max-width: 750px) and (min-width: 400px) {
-  .intro-skill {
-    margin-bottom: 150px;
-  }
-}
-
 .intro-skill2 {
   display: flex;
   justify-content: flex-end;
@@ -191,32 +121,6 @@ nav {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  .latest-work {
-    text-align: center;
-    font-size: 7px;
-    height: 90px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (min-width: 901px) {
-  .latest-work {
-    text-align: center;
-    font-size: 1rem;
-    height: 100px;
-    width: 100%;
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 599px) and (min-width: 300px) {
-  .latest-work {
-    display: none;
-  }
-}
-
 /* Weather Text */
 .project-text {
   font-size: 2.5rem;
@@ -226,26 +130,131 @@ nav {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+.unlisted {
+  text-align: left;
+}
+
+
+
+
+/* Media Queriers Portrait */
+/* Lg >= up breakpoint */
+@media only screen 
+and (min-width: 992px)
+and (orientation : portrait) {
+  .latest-work {
+    text-align: center;
+    font-size: 1rem;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .unlisted {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Lg - Sm breakpoint */
+@media screen 
+and (max-width: 992px) 
+and (min-width: 576px)
+and (orientation : portrait) {
+  .intro-words {
+    font-size: 1.5rem;
+  }
+
   .project-text {
     font-size: 1.5rem;
   }
 
   .project-tech {
-    
+    font-size: 1.5rem;
+  }
+
+  .latest-work {
+    text-align: center;
+    font-size: 7px;
+    height: 90px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro1 {
+    margin: 0;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+
+  .title {
+    font-size: 5.3rem;
+  }
+
+  .unlisted {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
+/* Md - Xs breakpoint */ 
+@media screen 
+and (max-width: 768px) 
+and (min-width: 300px)
+and (orientation : portrait) {
+  .intro-skill {
+    margin-bottom: 150px;
+    font-size: 1.5rem;
+  }
 
-@media screen and (max-width: 599px) and (min-width: 300px) {
+  .unlisted {
+    margin-left: 20px;
+  }
+}
+
+.intro-skill2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  margin-top: 9%;
+  margin-bottom: 50%;
+}
+
+/* Xs - Sm breakpoint */
+@media screen 
+and (max-width: 575px) 
+and (min-width: 300px)
+and (orientation : portrait) {
+  .navbar {
+    display: none;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
   .project-text {
     font-size: 1rem;
   }
 
   .project-tech {
-  
+    font-size: 1rem;
   }
 }
+
+.latest-work {
+  display: none;
+}
+
+.intro-words {
+  text-align: center;
+  font-size: 1.5rem;
+  height: 50%;
+  position: absolute;
+}
+
+/* Media Queries Landscape */
+
+
 
 /* Animations */
 .spaceIn {
@@ -329,7 +338,7 @@ nav {
     background-image: url('../img/weatherapp.png');
   }
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 768px) {
     #image {
       margin-top: 100px;
     }
