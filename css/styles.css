@@ -233,10 +233,12 @@ and (orientation : portrait) {
   }
 
   .project-text {
+    display: flex;
     font-size: 1rem;
   }
 
   .project-tech {
+    display: flex;
     font-size: 1rem;
   }
 }
@@ -250,6 +252,13 @@ and (orientation : portrait) {
   font-size: 1.5rem;
   height: 50%;
   position: absolute;
+}
+
+@media screen 
+and (max-width: 376px) {
+  br {
+    display: none;
+  }
 }
 
 /* Media Queries Landscape */
