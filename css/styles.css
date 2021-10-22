@@ -138,9 +138,9 @@ nav {
 
 
 /* Media Queriers Portrait */
-/* Lg >= up breakpoint */
+/* Lg >= up breakpoint Desktops, large screens, and extra large screens */
 @media only screen 
-and (min-width: 992px)
+and (min-width: 1025px)
 and (orientation : portrait) {
   .latest-work {
     text-align: center;
@@ -155,10 +155,10 @@ and (orientation : portrait) {
   }
 }
 
-/* Lg - Sm breakpoint */
+/* Lg - Sm breakpoint Small Screens, Laptops */
 @media screen 
-and (max-width: 992px) 
-and (min-width: 576px)
+and (max-width: 1024px) 
+and (min-width: 769px)
 and (orientation : portrait) {
   .intro-words {
     font-size: 1.5rem;
@@ -196,10 +196,10 @@ and (orientation : portrait) {
   }
 }
 
-/* Md - Xs breakpoint */ 
+/* Xs - Md breakpoint iPads, Tablets */ 
 @media screen 
 and (max-width: 768px) 
-and (min-width: 300px)
+and (min-width: 481px)
 and (orientation : portrait) {
   .title {
     font-size: 1rem;
@@ -222,9 +222,9 @@ and (orientation : portrait) {
   margin-bottom: 50%;
 }
 
-/* Xs - Sm breakpoint */
+/* Sm - Xs breakpoint Mobile Devices */
 @media screen 
-and (max-width: 575px) 
+and (max-width: 480px) 
 and (min-width: 300px)
 and (orientation : portrait) {
   .navbar {
@@ -261,6 +261,21 @@ and (orientation : portrait) {
 and (max-width: 425px) {
   br {
     display: none;
+  }
+}
+
+/* Media Query Mobile Phones */
+@media screen 
+and (max-width: 425px) {
+  .social-row {
+    width: 100%;
+  }
+  .social-icons {
+    width: 100%;
+  }
+  .iconic {
+    width: 100%;
+    padding: 15px;
   }
 }
 

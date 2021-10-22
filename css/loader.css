@@ -22,3 +22,25 @@
   }
 }
 
+/* Xs - Md breakpoint iPads, Tablets */ 
+@media screen 
+and (max-width: 768px) 
+and (min-width: 481px)
+   {
+  .loader {
+    font-size: 50px;
+    background-image: url('https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=50')
+  }
+}
+
+/* Sm - Xs breakpoint Mobile Devices */
+@media screen 
+and (max-width: 480px) 
+and (min-width: 300px)
+ {
+  .loader {
+    font-size: 50px;
+    background-image: url('https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=50')
+  }
+}
+
